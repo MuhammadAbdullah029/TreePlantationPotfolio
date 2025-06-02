@@ -9,7 +9,9 @@
   <body>
     <main>
       <h1 class="title">Tree Plantation Portfolio</h1>
-      <p><strong>Location:</strong> Govt. Higher Secondary School, Johar Twon </p>
+      <p>
+        <strong>Location:</strong> Govt. Higher Secondary School, Johar Twon
+      </p>
       <h1>Planting (first phase)</h1>
       <h1>↓</h1>
       <div class="img">
@@ -37,18 +39,29 @@
 
       <h1 class="title1">Observations on Tree Growth</h1>
       <p>
-        <strong>Cono Plant:</strong> This plant showed slow and steady vertical growth. It
-        maintained a healthy green color and its shape became fuller over time.
-        I noticed new branches forming by the second month. <br> <br>
-        <strong>Ficus Benjamina:</strong> The
-        Ficus adapted quickly and grew well. It developed more
-        flexible branches and shiny, healthy leaves. Some leaf drop occurred
-        early, but it stabilized with regular care.  <br> <br>
-        <strong>Guava Plant:</strong> The guava plant
-        was the most interactive to monitor. New leaves appeared within the
-        first few weeks. By the third month, small flower buds started forming,
-        showing healthy development.
+        <strong>Cono Plant:</strong> This plant showed slow and steady vertical
+        growth. It maintained a healthy green color and its shape became fuller
+        over time. I noticed new branches forming by the second month. <br />
+        <br />
+        <strong>Ficus Benjamina:</strong> The Ficus adapted quickly and grew
+        well. It developed more flexible branches and shiny, healthy leaves.
+        Some leaf drop occurred early, but it stabilized with regular care.
+        <br />
+        <br />
+        <strong>Guava Plant:</strong> The guava plant was the most interactive
+        to monitor. New leaves appeared within the first few weeks. By the third
+        month, small flower buds started forming, showing healthy development.
       </p>
     </main>
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script>
+      gsap.to(".img img", {
+        opacity: 1,
+        duration: 3,
+        filter: "none", // removing displacement
+        ease: "power2.out",
+    });
+    </script>
   </body>
 </html>
